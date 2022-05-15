@@ -1,15 +1,16 @@
+import React from "react"; //imr
+import ReactDOM from 'react-dom/client'; //imrd
+import { createGlobalStyle } from 'styled-components'; //imsc
 
-import React from "react";
-import ReactDOM from 'react-dom/client';
-import { createGlobalStyle } from 'styled-components';
 import App from './App';
 
-const Global_Styled = createGlobalStyle`
+//设定全局CSS
+const My_Global_Styled = createGlobalStyle`
     body {
         display: flex;
         justify-content:center;
         align-items: center;
-        width: 100vw;
+        width: 100%;
         min-height: 100vh;
         background-image: linear-gradient( to bottom right, #69c0ff 0%, #b7eb8f 100%)
     }
@@ -23,11 +24,12 @@ const Global_Styled = createGlobalStyle`
         text-decoration: none;
         list-style: none;
     }
-`
-
-ReactDOM.createRoot(document.getElementById('root1')).render(
+`;
+ //找到ID='root_123'的元素 并在下面创建一个新Root，并渲染返回render()内部的内容
+const second_root = ReactDOM.createRoot(document.getElementById('root_123'))
+second_root.render(
     <>
-    <Global_Styled />
+    <My_Global_Styled />
     <App />
     </>
 );

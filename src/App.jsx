@@ -1,23 +1,26 @@
-import styled from 'styled-components';
+import styled from 'styled-components'; //imsc
 import Clock from './clocks/Clock';
-const ClockGroup = styled.div`
+
+// ffc -> function, sfc -> arrow func
+const ClocksGroup = styled.div` //CSS
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    max-width:1200px;
+    max-width:1500px;
 `;
 
 const App = (props) => {
     return (
-    <ClockGroup>
+    <ClocksGroup> 
         <Clock />
         <Clock />
         <Clock />
         <Clock />
-    </ClockGroup>
+        <Clock />
+        <Clock />
+    </ClocksGroup>
     );
-
 };
 
 export default App;

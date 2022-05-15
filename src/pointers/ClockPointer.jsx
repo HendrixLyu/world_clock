@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const ClockPointerStyle = styled.div`
+const ClockPlateStyle = styled.div`
     position: relative;
     width: ${(props => props.size)};
     height: ${(props => props.size)};
@@ -11,25 +11,25 @@ const ClockPointerStyle = styled.div`
     background-size: cover;
     border-radius: 50%;
     border: 14px solid ${props => props.is_white ? props.white : props.black};
-    box-shadow: ${(props) =>
-        props.is_white ? props.bg_white_box_shadow : props.bg_black_box_shadow};
-        color: ${(props) => (props.is_white ? props.black : props.white)};
+    box-shadow: ${(props) => props.is_white ? props.bg_white_box_shadow : props.bg_black_box_shadow};
+    color: ${(props) => (props.is_white ? props.black : props.white)};
 `
-ClockPointerStyle.defaultProps = {
+ClockPlateStyle.defaultProps = {
     size:'250px',
     white:'#fff',
     black:'#091921',
     is_white: true,
-    bg_white:'url("../imgs/image_1")',
+    bg_white:'url("../imgs/image_1.png")',
     bg_white_box_shadow: "inset 0 0 30px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 0 4px rgba(255, 255, 255, 1)",
-    bg_black:'url("../imgs/image_2")',
+    bg_black:'url("../imgs/image_2.png")',
     bg_black_box_shadow: "inset 0 0 30px rgba(255, 255, 255, 0.1), 0 20px 20px rgba(0, 0, 0, 0.5), 0 0 0 4px #091921",
-}
+};
+
 const ClockPointer = () => {
     return (
-    <ClockPointerStyle>
+    <ClockPlateStyle>
         老板加钟么 
-    </ClockPointerStyle>  
+    </ClockPlateStyle>  
     );
 }
  

@@ -1,5 +1,4 @@
-import styled from 'styled-components';
-
+import styled from 'styled-components'; //imsc
 
 const ClockBackground = styled.div`
     width: ${props => props.size};
