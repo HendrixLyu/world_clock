@@ -1,7 +1,7 @@
 import styled from 'styled-components'; //imsc
 import Clock from './clocks/Clock';
 
-// ffc -> function, sfc -> arrow func
+// ffc -> function & sfc -> arrow func
 const ClocksGroup = styled.div` //CSS
     display: flex;
     justify-content: center;

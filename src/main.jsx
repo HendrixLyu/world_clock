@@ -25,9 +25,10 @@ const My_Global_Styled = createGlobalStyle`
         list-style: none;
     }
 `;
+
  //找到ID='root_123'的元素 并在下面创建一个新Root，并渲染返回render()内部的内容
-const second_root = ReactDOM.createRoot(document.getElementById('root_123'))
-second_root.render(
+const new_root = ReactDOM.createRoot(document.getElementById('root_123'))
+new_root.render(
     <>
     <My_Global_Styled />
     <App />
