@@ -12,7 +12,7 @@ const ClockBackground = styled.div`
     padding:20px;
     margin:2rem;
 `;
-
+// 设置默认值
 ClockBackground.defaultProps = {
     size: '400px'
 };

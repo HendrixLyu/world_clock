@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'; //快捷键:imsc
 
 const ClockPlateStyle = styled.div`
     position: relative;
@@ -14,7 +14,7 @@ const ClockPlateStyle = styled.div`
     box-shadow: ${(props) => props.is_white ? props.bg_white_box_shadow : props.bg_black_box_shadow};
     color: ${(props) => (props.is_white ? props.black : props.white)};
 `
-ClockPlateStyle.defaultProps = {
+ClockPlateStyle.defaultProps = { //设置默认值//
     size:'250px',
     white:'#fff',
     black:'#091921',
@@ -24,13 +24,13 @@ ClockPlateStyle.defaultProps = {
     bg_black:'url("../imgs/image_2.png")',
     bg_black_box_shadow: "inset 0 0 30px rgba(255, 255, 255, 0.1), 0 20px 20px rgba(0, 0, 0, 0.5), 0 0 0 4px #091921",
 };
-
+// 快捷键:sfc -> arrow function
 const ClockPointer = () => {
     return (
     <ClockPlateStyle>
-        老板加钟么 
+        老板加钟⌚️么 
     </ClockPlateStyle>  
     );
 }
- 
+
 export default ClockPointer;
