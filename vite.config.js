@@ -8,6 +8,6 @@ export default defineConfig({
     port: 9901
   }, 
   // build: {
-  //   outDir:'build_111' //将默认dist文件 改成 build_任意名
+  //   outDir:'build_666' //将默认dist文件 改名为任意名(e.g.: build_666)
   // }
 })
