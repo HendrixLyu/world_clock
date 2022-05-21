@@ -13,11 +13,11 @@ const ClocksGroup = styled.div` //CSS
 const App = (props) => {
     return (
     <ClocksGroup> 
-        <Clock />
-        <Clock />
-        <Clock />
-        <Clock />
-        <Clock />
+        <Clock city={'Sydney'} timezone={10} />
+        <Clock city={'NYC'} timezone={-4} />
+        <Clock city={'Lon'} timezone={1} />
+        <Clock city={'BJ'} timezone={8} />
+        <Clock city={'Mel'} timezone={10} />
     </ClocksGroup>
     );
 };
