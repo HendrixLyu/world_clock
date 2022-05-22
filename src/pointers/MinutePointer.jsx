@@ -6,7 +6,7 @@ const MinuPointer_Style = styled(BasicPointer)``;
 MinuPointer_Style.defaultProps = {
     rotate:30,
     size: 120,
-    bg_white: "#26a092",
+    bg_white: "#46bfb1",
     bg_black: "#fff",
     width:4,
 }

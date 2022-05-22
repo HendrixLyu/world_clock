@@ -2,7 +2,7 @@ import styled from 'styled-components'; //快捷键:imsc
 import Clock from './clocks/Clock';
 
 
-const ClocksGroup = styled.div` //CSS
+const ClocksGroup = styled.div` //在JS里写CSS
     display: flex;
     justify-content: center;
     align-items: center;

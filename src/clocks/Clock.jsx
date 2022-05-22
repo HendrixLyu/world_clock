@@ -20,7 +20,7 @@ const Clock = (props) => {
         let nowTime = new Date();
         let day = new Date(nowTime.getTime() + props.timezone * 3600000)
         let hour = day.getUTCHours() * deg * 5 //时针:每次转30度
-        let minute = day.getUTCMinutes() * deg
+        let minute = day.getUTCMinutes() * deg //分针秒针:每次转6度
         let second = day.getUTCSeconds() * deg
 
         setHourDeg(hour + minute / 12)
