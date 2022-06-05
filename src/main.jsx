@@ -14,7 +14,6 @@ const My_Global_Styled = createGlobalStyle`
         min-height: 100vh;
         background-image: linear-gradient( to bottom right, #69c0ff 0%, #b7eb8f 100%)
     }
-
     *,
     *::before,
     *::after{
@@ -24,11 +23,11 @@ const My_Global_Styled = createGlobalStyle`
         text-decoration: none;
         list-style: none;
     }
-`;
+`
 
  //找到ID='root_123'的元素 并在下面创建一个新Root，并渲染返回render()内部的内容
 const new_root = ReactDOM.createRoot(document.getElementById('root_123'))
-new_root.render(
+new_root.render( //渲染
     <>
     <My_Global_Styled />
     <App />
