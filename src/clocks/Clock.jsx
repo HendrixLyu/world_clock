@@ -6,14 +6,14 @@ import { useState, useEffect } from "react";
 
 // 快捷键: sfc -> arrow function
 const Clock = props => {
+  //设置背景色,时针,分针,秒针几种状态
   const [light, setLight] = useState(true);
   const [hourDeg, setHourDeg] = useState(0);
   const [minuteDeg, setMinuteDeg] = useState(90);
   const [secondDeg, setSecondDeg] = useState(180);
-
   const [Hour, setHour] = useState();
-
-  const deg = 6;
+  
+  const deg = 6; //一格是6度(360/60)
 
   const ShowTime = () => {
     //Date(),getUTCHours()...均为内嵌函数,可直接调用
@@ -34,7 +34,7 @@ const Clock = props => {
     const interval = setInterval(() => {
       ShowTime();
     }, 100); //0.1秒更新一次
-    return () => clearInterval(interval);
+    return () => clearInterval(interval); //DidMount
   }, []);
 
   useEffect(() => {

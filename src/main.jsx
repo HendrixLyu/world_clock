@@ -28,7 +28,7 @@ const My_Global_Styled = createGlobalStyle`
 //找到ID='root_123'的元素 并在下面创建一个新Root，并渲染返回render()内部的内容
 const new_root = ReactDOM.createRoot(document.getElementById("root_123"));
 new_root.render(
-  //渲染
+  //render:渲染
   <>
     <My_Global_Styled />
     <App />
