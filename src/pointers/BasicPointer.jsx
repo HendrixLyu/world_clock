@@ -9,7 +9,6 @@ const BasicPointer = styled.div`
   height: ${props => props.size}px;
   transform: ${props => `rotate(${props.rotate}deg)`};
   z-index: ${props => props.z_index};
-  /* background: green; */
   ::before {
     content: "";
     /* position: absolute; */
